@@ -1,0 +1,21 @@
+{
+    "name": "DMToolkit",
+    "script": "DMToolkit.js",
+    "version": "1.6.0",
+    "previousversions": ["1.0.0", "1.1.0", "1.2.0", "1.3.0", "1.4.0", "1.5.0"],
+    "description": "# DMToolkit v1.6.0\n\nA comprehensive DM automation suite for D&D 5E, optimized for the **D&D Beyond + Beyond20 + Roll20** workflow. 15 modules covering combat, conditions with duration tracking, concentration auto-detection, HP monitoring, XP tracking, session recaps, quest management, downtime activities, and session summaries.\n\n## Key Features\n\n* **Initiative Automation** — Roll all/NPCs/PCs, group rolls, SRD monster database (~200 creatures)\n* **Condition Duration Tracking** — Apply conditions with round timers, auto-expire on turn change\n* **Concentration Tracker** — Auto-detects from Beyond20, prompts CON saves on damage\n* **HP Monitor** — Auto dead/unconscious markers, bloodied warnings, gray tint on NPC death\n* **XP Tracker** — Auto-tally from kills with CR lookup, manual XP, session awards\n* **Quest Tracker** — Persistent quest log with statuses, public board, handout generation\n* **Downtime System** — 12 activity types with built-in mechanics (carousing, gambling, training, etc.)\n* **Session Summary** — Compile recap, quests, XP, downtime into copyable text for Discord/AI\n\n## Commands\n\n`!combat` Initiative | `!condition` Conditions | `!conc` Concentration | `!xp` XP | `!recap` Recap | `!quest` Quests | `!downtime` Downtime | `!session` Summary | `!loot` Loot | `!dm` DM Screen | `!guide` Player Guide | `!setup` Session Setup | `!toolkit` Help & Config",
+    "authors": "Guy",
+    "roll20userid": "",
+    "dependencies": [],
+    "modifies": {
+        "state.DMToolkit": "read,write",
+        "turnorder": "read,write",
+        "initiative_bonus": "read",
+        "npc_challenge": "read",
+        "bar1_value": "read",
+        "bar1_max": "read",
+        "statusmarkers": "read,write",
+        "tint_color": "write"
+    },
+    "conflicts": []
+}
